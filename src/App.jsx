@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail";
 
 const App = () => {
   const [cartCount, setCartCount] = useState(0);
@@ -10,10 +12,13 @@ const App = () => {
   };
 
   return (
-    <div>
+    <Router>
       <Header cartCount={cartCount} />
-      <Home addToCart={addToCart} />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home addToCart={addToCart} />} />
+        <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
+      </Routes>
+    </Router>
   );
 };
 

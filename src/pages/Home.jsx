@@ -1,17 +1,17 @@
-import "../styles/Home.css";
 import ProductCard from "../components/ProductCard";
+import "../styles/Home.css";
 
 const products = [
-  { name: "Product 1", price: 10 },
-  { name: "Product 2", price: 20 },
-  { name: "Product 3", price: 30 },
+  { id: 1, name: "Product 1", price: 10 },
+  { id: 2, name: "Product 2", price: 20 },
+  { id: 3, name: "Product 3", price: 30 },
 ];
 
 const Home = ({ addToCart }) => {
   return (
     <div className="home">
-      {products.map((product, index) => (
-        <ProductCard key={index} name={product.name} price={product.price} addToCart={addToCart} />
+      {products.map((product) => (
+        <ProductCard key={product.id} id={product.id} name={product.name} price={product.price} addToCart={addToCart} />
       ))}
     </div>
   );
