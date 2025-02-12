@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: #BF5700;
+  color: white;
+  padding: 15px 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+
+.header span {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
