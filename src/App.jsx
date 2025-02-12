@@ -16,7 +16,7 @@ const App = () => {
       <Header cartCount={cartCount} />
       <Routes>
         <Route path="/" element={<Home addToCart={addToCart} />} />
-        <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </Router>
   );
