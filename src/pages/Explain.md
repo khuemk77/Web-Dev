@@ -1,0 +1,1 @@
+In shopping cart vite, state is stored in the parent component. I needed product detail to be able to update that state, so I passed down a function as a prop. When the product detail calls that function, it triggers the parent’s state update, and React re-renders the UI with the new value.

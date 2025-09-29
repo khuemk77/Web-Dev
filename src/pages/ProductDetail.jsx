@@ -7,9 +7,10 @@ const products = [
   { id: 3, name: "Product 3", price: 30, description: "An excellent product that exceeds expectations." },
 ];
 
-const ProductDetail = ({}) => {
+const ProductDetail = ({addToCart}) => {
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
+{/* addToCart was passed down to Product Detail to be used later*/}
 
   if (!product) {
     return <h2 className="error-message">Product not found</h2>;
@@ -21,7 +22,9 @@ const ProductDetail = ({}) => {
         <h2>{product.name}</h2>
         <p className="product-price">Price: ${product.price}</p>
         <p className="product-description">{product.description}</p>
-        <button onClick={''}>Add to Cart</button>
+        <button onClick={() => addToCart()}>Add to Cart</button>
+        {/* addToCart was used to increase the number of items 
+        when button on Product Detail page */}
       </div>
     </div>
   );

@@ -16,7 +16,8 @@ const App = () => {
       <Header cartCount={cartCount} />
       <Routes>
         <Route path="/" element={<Home addToCart={addToCart} />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/product/:id" element={<ProductDetail addToCart = {addToCart} />} /> 
+        {/* addToCart was passed down to Product Detail page */}
       </Routes>
     </Router>
   );
