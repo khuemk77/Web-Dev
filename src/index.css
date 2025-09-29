@@ -1,0 +1,129 @@
+/* Global Styling */
+body {
+ /* border: solid; */
+    font-family: Arial;
+    background-color: #a3b18a;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header Styling */
+header {
+    background-color: #3a5a40;
+    color: #ffafcc;
+    text-align: center;
+    padding: 10px;
+    display: inline;}
+header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+header li {
+        margin: 0 20px;
+        display: inline-block;
+    }
+
+h1 {
+    text-align: center
+}
+h2 {
+    color: #3a5a40;
+}
+h3 {
+    color: #588157;
+}
+
+
+
+#txt-red {
+    color: red;
+}
+
+ 
+/* Nav links are styled here*/
+a {
+    color: white;
+    text-align: center;
+}
+a:hover{
+    color: yellow;
+}
+
+
+
+
+/* Section Styling */
+.section-background{
+    background-color: white;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #cc5500; /* Burnt Orange */
+    color: #ffffff; /* White */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light Khaki for contrast */
+}
+
+table tr:hover {
+    background-color: #d3d3d3;
+}
+
+/* Form Styling */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #cc5500; /* Burnt Orange */
+}
+
+form input[type="text"], form input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button on Form Styling */
+
+ 
+/* Button hover here to lighten color */
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+}
+
+/* Additional Styling for Image Gallery in index.html */
+img {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+/* Custom Highlight Section Styling for headers and hr */
+ 
